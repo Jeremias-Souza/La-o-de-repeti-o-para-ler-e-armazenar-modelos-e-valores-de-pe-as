@@ -1,0 +1,31 @@
+ struct {// struct para ordem de serviço.
+    char pecas[30];
+    float valor_pecas;
+     }ordem_servico;
+ 
+ 
+ 
+ //Declaração de variaveis.
+    int continuar=0;
+    int quantidade_pecas=0;
+
+    //Responsável: Jeremias.
+
+    while (continuar == 0){ //Laço de repetição.
+
+
+        printf("---Informe a peca desejada: " );
+        scanf("%s", &ordem_servico.pecas);
+
+
+        printf("\n---Informe o valor da peca:  ");
+        scanf("%f", &ordem_servico.valor_pecas);
+
+
+        printf("\n\n\nTecle (0) para continuar \n        ou \nTecle (1) para encerrar  \n\nDeseja adicionar mais uma peca:  ");
+        scanf("%d", &continuar);
+
+
+
+
+    }// Fim do laço de repetição.
